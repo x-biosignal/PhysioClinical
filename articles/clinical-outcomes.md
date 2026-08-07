@@ -29,7 +29,7 @@ c(baseline = bl@total, followup = fu@total)
 ```
 
 If you instead start from a table of already-scored assessments,
-[`PhysioIO::readClinicalMetadataCSV()`](https://rdrr.io/pkg/PhysioIO/man/readClinicalMetadataCSV.html)
+[`PhysioIO::readClinicalMetadataCSV()`](https://x-biosignal.r-universe.dev/PhysioIO/reference/readClinicalMetadataCSV.html)
 reads the long-format (`subject_id, visit_id, scale_name, scale_score`)
 layout into the same workflow.
 
