@@ -54,9 +54,9 @@
     </div>
 
     <div class="section level2">
-      <h2 id="instrument-scoring">Instrument scoring<a class="anchor" aria-label="anchor" href="#instrument-scoring"></a></h2>
+      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
 
-      <div class="section-desc"><p>Data-driven scoring of validated clinical outcome measures.</p></div>
+
 
       <dl></dl></div><div class="section level2">
 
@@ -65,17 +65,17 @@
 
       <dl><dt>
 
-          <code><a href="ClinicalInstrument.html">ClinicalInstrument()</a></code>
-
-        </dt>
-        <dd>Construct a ClinicalInstrument</dd>
-
-        <dt>
-
           <code><a href="ClinicalInstrument-class.html">show(<i>&lt;ClinicalInstrument&gt;</i>)</a></code>
 
         </dt>
         <dd>Clinical instrument specification</dd>
+
+        <dt>
+
+          <code><a href="ClinicalInstrument.html">ClinicalInstrument()</a></code>
+
+        </dt>
+        <dd>Construct a ClinicalInstrument</dd>
 
         <dt>
 
@@ -86,10 +86,73 @@
 
         <dt>
 
+          <code><a href="GovernedNormativeReference-class.html">GovernedNormativeReference-class</a></code>
+
+        </dt>
+        <dd>Governed normative reference</dd>
+
+        <dt>
+
+          <code><a href="GovernedNormativeReference.html">GovernedNormativeReference()</a></code>
+
+        </dt>
+        <dd>Construct a governed normative reference</dd>
+
+        <dt>
+
           <code><a href="as.data.frame.ClinicalScore.html">as.data.frame(<i>&lt;ClinicalScore&gt;</i>)</a></code>
 
         </dt>
         <dd>Convert a ClinicalScore to a one-row data.frame</dd>
+
+        <dt>
+
+          <code><a href="classifyResponder.html">classifyResponder()</a></code> <code><a href="classifyResponder.html">summary(<i>&lt;responder_classification&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Dual MDC-vs-MCID responder classification</dd>
+
+        <dt>
+
+          <code><a href="defineGoal.html">defineGoal()</a></code>
+
+        </dt>
+        <dd>Define a Goal Attainment Scaling goal</dd>
+
+        <dt>
+
+          <code><a href="estimateMCID_anchor.html">estimateMCID_anchor()</a></code>
+
+        </dt>
+        <dd>Anchor-based MCID</dd>
+
+        <dt>
+
+          <code><a href="estimateMCID_distribution.html">estimateMCID_distribution()</a></code>
+
+        </dt>
+        <dd>Distribution-based MCID (fraction-of-SD rule)</dd>
+
+        <dt>
+
+          <code><a href="estimateMDC.html">estimateMDC()</a></code>
+
+        </dt>
+        <dd>Distribution-based Minimal Detectable Change from test-retest data</dd>
+
+        <dt>
+
+          <code><a href="gasSummary.html">gasSummary()</a></code>
+
+        </dt>
+        <dd>Tabulate a GAS result</dd>
+
+        <dt>
+
+          <code><a href="getClinimetric.html">getClinimetric()</a></code>
+
+        </dt>
+        <dd>Look up a per-instrument clinimetric constant</dd>
 
         <dt>
 
@@ -100,6 +163,20 @@
 
         <dt>
 
+          <code><a href="getNormative.html">getNormative()</a></code>
+
+        </dt>
+        <dd>Retrieve a normative reference from the registry</dd>
+
+        <dt>
+
+          <code><a href="listClinimetrics.html">listClinimetrics()</a></code>
+
+        </dt>
+        <dd>List available clinimetric constants</dd>
+
+        <dt>
+
           <code><a href="listInstruments.html">listInstruments()</a></code>
 
         </dt>
@@ -107,66 +184,10 @@
 
         <dt>
 
-          <code><a href="registerInstrument.html">registerInstrument()</a></code>
+          <code><a href="listNormative.html">listNormative()</a></code>
 
         </dt>
-        <dd>Register a clinical instrument</dd>
-
-        <dt>
-
-          <code><a href="scoreInstrument.html">scoreInstrument()</a></code>
-
-        </dt>
-        <dd>Score item responses against a clinical instrument</dd>
-
-        <dt>
-
-          <code><a href="scoreBerg.html">scoreBerg()</a></code>
-
-        </dt>
-        <dd>Score the Berg Balance Scale (BBS)</dd>
-
-        <dt>
-
-          <code><a href="scoreFMAUE.html">scoreFMAUE()</a></code>
-
-        </dt>
-        <dd>Score the Fugl-Meyer Assessment, Upper Extremity (FMA-UE)</dd>
-
-        <dt>
-
-          <code><a href="scoreFMALE.html">scoreFMALE()</a></code>
-
-        </dt>
-        <dd>Score the Fugl-Meyer Assessment, Lower Extremity (FMA-LE)</dd>
-
-        <dt>
-
-          <code><a href="scoreARAT.html">scoreARAT()</a></code>
-
-        </dt>
-        <dd>Score the Action Research Arm Test (ARAT)</dd>
-
-        <dt>
-
-          <code><a href="scoreNIHSS.html">scoreNIHSS()</a></code>
-
-        </dt>
-        <dd>Score the NIH Stroke Scale (NIHSS)</dd>
-
-        <dt>
-
-          <code><a href="scoreMRS.html">scoreMRS()</a></code>
-
-        </dt>
-        <dd>Score the modified Rankin Scale (mRS)</dd>
-
-        <dt>
-
-          <code><a href="scoreMAS.html">scoreMAS()</a></code>
-
-        </dt>
-        <dd>Score a Modified Ashworth Scale (MAS) rating</dd>
+        <dd>List registered normative references</dd>
 
         <dt>
 
@@ -177,42 +198,47 @@
 
         <dt>
 
-          <code><a href="scoreWMFT.html">scoreWMFT()</a></code>
+          <code><a href="matchStratum.html">matchStratum()</a></code>
 
         </dt>
-        <dd>Score the Wolf Motor Function Test functional-ability scale (WMFT-FAS)</dd>
+        <dd>Match the normative stratum for a set of covariates</dd>
 
         <dt>
 
-          <code><a href="wmftMedianTime.html">wmftMedianTime()</a></code>
+          <code><a href="mdcResponder.html">mdcResponder()</a></code>
 
         </dt>
-        <dd>Median WMFT performance time</dd>
+        <dd>Classify change scores against the minimal detectable change (MDC)</dd>
 
         <dt>
 
-          <code><a href="scoreFIM.html">scoreFIM()</a></code>
+          <code><a href="normativeDeviation.html">normativeDeviation()</a></code>
 
         </dt>
-        <dd>Score the Functional Independence Measure (FIM)</dd>
+        <dd>Batch normative deviation over a metric table</dd>
 
         <dt>
 
-          <code><a href="scoreFAM.html">scoreFAM()</a></code>
+          <code><a href="normativeZScore.html">normativeZScore()</a></code>
 
         </dt>
-        <dd>Score the Functional Assessment Measure (FIM+FAM)</dd>
-      </dl></div><div class="section level2">
-      <h2 id="timed-performance-tests">Timed performance tests<a class="anchor" aria-label="anchor" href="#timed-performance-tests"></a></h2>
+        <dd>Normative z-score / percentile for an observation</dd>
 
-      <div class="section-desc"><p>Gait- and mobility-derived timed tests.</p></div>
+        <dt>
 
-      <dl></dl></div><div class="section level2">
+          <code><a href="registerInstrument.html">registerInstrument()</a></code>
 
+        </dt>
+        <dd>Register a clinical instrument</dd>
 
+        <dt>
 
+          <code><a href="registerNormative.html">registerNormative()</a></code>
 
-      <dl><dt>
+        </dt>
+        <dd>Register a normative reference in the versioned registry</dd>
+
+        <dt>
 
           <code><a href="score10MWT.html">score10MWT()</a></code>
 
@@ -228,163 +254,45 @@
 
         <dt>
 
-          <code><a href="scoreTUG.html">scoreTUG()</a></code>
+          <code><a href="scoreARAT.html">scoreARAT()</a></code>
 
         </dt>
-        <dd>Score a Timed Up and Go test (TUG)</dd>
-      </dl></div><div class="section level2">
-      <h2 id="clinimetrics-and-responder-analysis">Clinimetrics and responder analysis<a class="anchor" aria-label="anchor" href="#clinimetrics-and-responder-analysis"></a></h2>
-
-      <div class="section-desc"><p>Published MDC/MCID constants and dual responder classification.</p></div>
-
-      <dl></dl></div><div class="section level2">
-
-
-
-
-      <dl><dt>
-
-          <code><a href="getClinimetric.html">getClinimetric()</a></code>
-
-        </dt>
-        <dd>Look up a per-instrument clinimetric constant</dd>
+        <dd>Score the Action Research Arm Test (ARAT)</dd>
 
         <dt>
 
-          <code><a href="listClinimetrics.html">listClinimetrics()</a></code>
+          <code><a href="scoreBerg.html">scoreBerg()</a></code>
 
         </dt>
-        <dd>List available clinimetric constants</dd>
+        <dd>Score the Berg Balance Scale (BBS)</dd>
 
         <dt>
 
-          <code><a href="estimateMDC.html">estimateMDC()</a></code>
+          <code><a href="scoreFAM.html">scoreFAM()</a></code>
 
         </dt>
-        <dd>Distribution-based Minimal Detectable Change from test-retest data</dd>
+        <dd>Score the Functional Assessment Measure (FIM+FAM)</dd>
 
         <dt>
 
-          <code><a href="estimateMCID_distribution.html">estimateMCID_distribution()</a></code>
+          <code><a href="scoreFIM.html">scoreFIM()</a></code>
 
         </dt>
-        <dd>Distribution-based MCID (fraction-of-SD rule)</dd>
+        <dd>Score the Functional Independence Measure (FIM)</dd>
 
         <dt>
 
-          <code><a href="estimateMCID_anchor.html">estimateMCID_anchor()</a></code>
+          <code><a href="scoreFMALE.html">scoreFMALE()</a></code>
 
         </dt>
-        <dd>Anchor-based MCID</dd>
+        <dd>Score the Fugl-Meyer Assessment, Lower Extremity (FMA-LE)</dd>
 
         <dt>
 
-          <code><a href="classifyResponder.html">classifyResponder()</a></code> <code><a href="classifyResponder.html">summary(<i>&lt;responder_classification&gt;</i>)</a></code>
+          <code><a href="scoreFMAUE.html">scoreFMAUE()</a></code>
 
         </dt>
-        <dd>Dual MDC-vs-MCID responder classification</dd>
-
-        <dt>
-
-          <code><a href="mdcResponder.html">mdcResponder()</a></code>
-
-        </dt>
-        <dd>Classify change scores against the minimal detectable change (MDC)</dd>
-      </dl></div><div class="section level2">
-      <h2 id="normative-references">Normative references<a class="anchor" aria-label="anchor" href="#normative-references"></a></h2>
-
-      <div class="section-desc"><p>Governed normative databases and deviation scoring.</p></div>
-
-      <dl></dl></div><div class="section level2">
-
-
-
-
-      <dl><dt>
-
-          <code><a href="GovernedNormativeReference.html">GovernedNormativeReference()</a></code>
-
-        </dt>
-        <dd>Construct a governed normative reference</dd>
-
-        <dt>
-
-          <code><a href="GovernedNormativeReference-class.html">GovernedNormativeReference-class</a></code>
-
-        </dt>
-        <dd>Governed normative reference</dd>
-
-        <dt>
-
-          <code><a href="show-GovernedNormativeReference-method.html">show(<i>&lt;GovernedNormativeReference&gt;</i>)</a></code>
-
-        </dt>
-        <dd>Show a normative reference (surfacing its governance)</dd>
-
-        <dt>
-
-          <code><a href="registerNormative.html">registerNormative()</a></code>
-
-        </dt>
-        <dd>Register a normative reference in the versioned registry</dd>
-
-        <dt>
-
-          <code><a href="getNormative.html">getNormative()</a></code>
-
-        </dt>
-        <dd>Retrieve a normative reference from the registry</dd>
-
-        <dt>
-
-          <code><a href="listNormative.html">listNormative()</a></code>
-
-        </dt>
-        <dd>List registered normative references</dd>
-
-        <dt>
-
-          <code><a href="validateNormativeManifest.html">validateNormativeManifest()</a></code>
-
-        </dt>
-        <dd>Validate a normative-artifact governance manifest</dd>
-
-        <dt>
-
-          <code><a href="normativeZScore.html">normativeZScore()</a></code>
-
-        </dt>
-        <dd>Normative z-score / percentile for an observation</dd>
-
-        <dt>
-
-          <code><a href="normativeDeviation.html">normativeDeviation()</a></code>
-
-        </dt>
-        <dd>Batch normative deviation over a metric table</dd>
-
-        <dt>
-
-          <code><a href="matchStratum.html">matchStratum()</a></code>
-
-        </dt>
-        <dd>Match the normative stratum for a set of covariates</dd>
-      </dl></div><div class="section level2">
-      <h2 id="goal-attainment-scaling">Goal Attainment Scaling<a class="anchor" aria-label="anchor" href="#goal-attainment-scaling"></a></h2>
-
-
-
-      <dl></dl></div><div class="section level2">
-
-
-
-
-      <dl><dt>
-
-          <code><a href="defineGoal.html">defineGoal()</a></code>
-
-        </dt>
-        <dd>Define a Goal Attainment Scaling goal</dd>
+        <dd>Score the Fugl-Meyer Assessment, Upper Extremity (FMA-UE)</dd>
 
         <dt>
 
@@ -395,54 +303,59 @@
 
         <dt>
 
-          <code><a href="gasSummary.html">gasSummary()</a></code>
+          <code><a href="scoreInstrument.html">scoreInstrument()</a></code>
 
         </dt>
-        <dd>Tabulate a GAS result</dd>
-      </dl></div><div class="section level2">
-      <h2 id="interoperability-export">Interoperability export<a class="anchor" aria-label="anchor" href="#interoperability-export"></a></h2>
-
-      <div class="section-desc"><p>FHIR, OMOP CDM, and CDISC SDTM/ADaM export of clinical scores.</p></div>
-
-      <dl></dl></div><div class="section level2">
-
-
-
-
-      <dl><dt>
-
-          <code><a href="toFHIRObservation.html">toFHIRObservation()</a></code>
-
-        </dt>
-        <dd>Export a clinical score as a FHIR R4 Observation</dd>
+        <dd>Score item responses against a clinical instrument</dd>
 
         <dt>
 
-          <code><a href="writeFHIRBundle.html">writeFHIRBundle()</a></code>
+          <code><a href="scoreMAS.html">scoreMAS()</a></code>
 
         </dt>
-        <dd>Write a FHIR Bundle of clinical-score Observations</dd>
+        <dd>Score a Modified Ashworth Scale (MAS) rating</dd>
 
         <dt>
 
-          <code><a href="validateFHIRObservation.html">validateFHIRObservation()</a></code>
+          <code><a href="scoreMRS.html">scoreMRS()</a></code>
 
         </dt>
-        <dd>Validate a FHIR Observation against the bundled JSON schema</dd>
+        <dd>Score the modified Rankin Scale (mRS)</dd>
 
         <dt>
 
-          <code><a href="toOMOP.html">toOMOP()</a></code>
+          <code><a href="scoreNIHSS.html">scoreNIHSS()</a></code>
 
         </dt>
-        <dd>Export clinical scores to OMOP CDM v5.4 tables</dd>
+        <dd>Score the NIH Stroke Scale (NIHSS)</dd>
 
         <dt>
 
-          <code><a href="writeOMOPTables.html">writeOMOPTables()</a></code>
+          <code><a href="scoreTUG.html">scoreTUG()</a></code>
 
         </dt>
-        <dd>Write OMOP CDM tables to CSV files</dd>
+        <dd>Score a Timed Up and Go test (TUG)</dd>
+
+        <dt>
+
+          <code><a href="scoreWMFT.html">scoreWMFT()</a></code>
+
+        </dt>
+        <dd>Score the Wolf Motor Function Test functional-ability scale (WMFT-FAS)</dd>
+
+        <dt>
+
+          <code><a href="show-GovernedNormativeReference-method.html">show(<i>&lt;GovernedNormativeReference&gt;</i>)</a></code>
+
+        </dt>
+        <dd>Show a normative reference (surfacing its governance)</dd>
+
+        <dt>
+
+          <code><a href="toADaM_ADQS.html">toADaM_ADQS()</a></code>
+
+        </dt>
+        <dd>Export clinical scores to an ADaM BDS (ADQS) data frame</dd>
 
         <dt>
 
@@ -453,13 +366,54 @@
 
         <dt>
 
-          <code><a href="toADaM_ADQS.html">toADaM_ADQS()</a></code>
+          <code><a href="toFHIRObservation.html">toFHIRObservation()</a></code>
 
         </dt>
-        <dd>Export clinical scores to an ADaM BDS (ADQS) data frame</dd>
+        <dd>Export a clinical score as a FHIR R4 Observation</dd>
+
+        <dt>
+
+          <code><a href="toOMOP.html">toOMOP()</a></code>
+
+        </dt>
+        <dd>Export clinical scores to OMOP CDM v5.4 tables</dd>
+
+        <dt>
+
+          <code><a href="validateFHIRObservation.html">validateFHIRObservation()</a></code>
+
+        </dt>
+        <dd>Validate a FHIR Observation against the bundled JSON schema</dd>
+
+        <dt>
+
+          <code><a href="validateNormativeManifest.html">validateNormativeManifest()</a></code>
+
+        </dt>
+        <dd>Validate a normative-artifact governance manifest</dd>
+
+        <dt>
+
+          <code><a href="wmftMedianTime.html">wmftMedianTime()</a></code>
+
+        </dt>
+        <dd>Median WMFT performance time</dd>
+
+        <dt>
+
+          <code><a href="writeFHIRBundle.html">writeFHIRBundle()</a></code>
+
+        </dt>
+        <dd>Write a FHIR Bundle of clinical-score Observations</dd>
+
+        <dt>
+
+          <code><a href="writeOMOPTables.html">writeOMOPTables()</a></code>
+
+        </dt>
+        <dd>Write OMOP CDM tables to CSV files</dd>
       </dl></div>
-  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
-    </nav></aside></div>
+  </main></div>
 
 
     <footer><div class="pkgdown-footer-left">
