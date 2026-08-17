@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,18 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.2.0" id="physioclinical-020">PhysioClinical 0.2.0<a class="anchor" aria-label="anchor" href="#physioclinical-020"></a></h2>
+<p>ADL/IADL instruments and interval (Rasch) analysis.</p>
+<ul><li>
+<code><a href="../reference/scoreBarthel.html">scoreBarthel()</a></code>, <code><a href="../reference/scoreKatz.html">scoreKatz()</a></code>, <code><a href="../reference/scoreLawton.html">scoreLawton()</a></code>: bundled Barthel Index, Katz ADL and Lawton-Brody IADL instruments, with provenance and interpretation strata.</li>
+<li>
+<code><a href="../reference/raschRecode.html">raschRecode()</a></code> / <code><a href="../reference/raschAnalyze.html">raschAnalyze()</a></code>: interval (Rasch) analysis of an ordinal instrument via PhysioAppKit – item difficulty hierarchy, category diagnostics, item fit, separation reliability and the raw-to-interval conversion.</li>
+<li>
+<code><a href="../reference/equateScores.html">equateScores()</a></code> / <code><a href="../reference/applyEquating.html">applyEquating()</a></code>: equipercentile and linear score crosswalks between scales (e.g. Barthel &lt;-&gt; FIM) from a linking sample.</li>
+<li>
+<code><a href="../reference/raschResponder.html">raschResponder()</a></code>: MDC / responder classification on the Rasch interval scale, driving <code><a href="../reference/mdcResponder.html">mdcResponder()</a></code> and <code><a href="../reference/classifyResponder.html">classifyResponder()</a></code> from the model’s own standard error.</li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.1.0" id="physioclinical-010">PhysioClinical 0.1.0<a class="anchor" aria-label="anchor" href="#physioclinical-010"></a></h2>
 <p>Initial release as part of the x-biosignal rehabilitation ecosystem split. This first version establishes the clinical outcome-analysis package, from instrument scoring through standards-compliant export.</p>
 <div class="section level3">
@@ -69,7 +81,7 @@
 <p>Responder classification against the minimal detectable change (MDC):</p>
 <ul><li>
 <code><a href="../reference/mdcResponder.html">mdcResponder()</a></code> labels change scores (follow-up minus baseline) as <code>"improved"</code>, <code>"stable"</code>, or <code>"declined"</code>, treating a change as a real improvement or decline only when it exceeds the measurement noise.</li>
-<li>The MDC threshold is derived from the standard error of measurement (<code>sem_value</code>) at a configurable confidence level (default 0.95) via <code><a href="https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html" class="external-link">PhysioCore::mdc()</a></code>, so classification stays consistent with the shared psychometric kernels in the ecosystem.</li>
+<li>The MDC threshold is derived from the standard error of measurement (<code>sem_value</code>) at a configurable confidence level (default 0.95) via <code><a href="https://x-biosignal.github.io/PhysioCore//reference/mdc.html" class="external-link">PhysioCore::mdc()</a></code>, so classification stays consistent with the shared psychometric kernels in the ecosystem.</li>
 <li>Accepts vectors of change scores for batch classification across a cohort.</li>
 </ul></li>
 </ul></div>

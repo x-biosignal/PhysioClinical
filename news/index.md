@@ -1,5 +1,32 @@
 # Changelog
 
+## PhysioClinical 0.2.0
+
+ADL/IADL instruments and interval (Rasch) analysis.
+
+- [`scoreBarthel()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBarthel.md),
+  [`scoreKatz()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreKatz.md),
+  [`scoreLawton()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreLawton.md):
+  bundled Barthel Index, Katz ADL and Lawton-Brody IADL instruments,
+  with provenance and interpretation strata.
+- [`raschRecode()`](https://x-biosignal.github.io/PhysioClinical/reference/raschRecode.md)
+  /
+  [`raschAnalyze()`](https://x-biosignal.github.io/PhysioClinical/reference/raschAnalyze.md):
+  interval (Rasch) analysis of an ordinal instrument via PhysioAppKit –
+  item difficulty hierarchy, category diagnostics, item fit, separation
+  reliability and the raw-to-interval conversion.
+- [`equateScores()`](https://x-biosignal.github.io/PhysioClinical/reference/equateScores.md)
+  /
+  [`applyEquating()`](https://x-biosignal.github.io/PhysioClinical/reference/applyEquating.md):
+  equipercentile and linear score crosswalks between scales
+  (e.g. Barthel \<-\> FIM) from a linking sample.
+- [`raschResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/raschResponder.md):
+  MDC / responder classification on the Rasch interval scale, driving
+  [`mdcResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/mdcResponder.md)
+  and
+  [`classifyResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/classifyResponder.md)
+  from the model’s own standard error.
+
 ## PhysioClinical 0.1.0
 
 Initial release as part of the x-biosignal rehabilitation ecosystem
@@ -47,7 +74,7 @@ package, from instrument scoring through standards-compliant export.
     or decline only when it exceeds the measurement noise.
   - The MDC threshold is derived from the standard error of measurement
     (`sem_value`) at a configurable confidence level (default 0.95) via
-    [`PhysioCore::mdc()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html),
+    [`PhysioCore::mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html),
     so classification stays consistent with the shared psychometric
     kernels in the ecosystem.
   - Accepts vectors of change scores for batch classification across a

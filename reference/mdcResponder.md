@@ -2,7 +2,7 @@
 
 A first responder-analysis primitive: a change is a real
 improvement/decline only if it exceeds the MDC (measurement noise). Uses
-[`PhysioCore::mdc`](https://x-biosignal.r-universe.dev/PhysioCore/reference/mdc.html).
+[`PhysioCore::mdc`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html).
 
 ## Usage
 
@@ -19,7 +19,7 @@ mdcResponder(change, sem_value, confidence = 0.95)
 - sem_value:
 
   The standard error of measurement (see
-  [`PhysioCore::sem`](https://x-biosignal.r-universe.dev/PhysioCore/reference/sem.html)).
+  [`PhysioCore::sem`](https://x-biosignal.github.io/PhysioCore//reference/sem.html)).
 
 - confidence:
 

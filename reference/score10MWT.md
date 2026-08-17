@@ -3,9 +3,9 @@
 Computes comfortable/fast gait speed and its ambulation category, with
 an optional normative z-score. Accepts a gait speed directly, a walk
 time, or a PhysioMoCap signal-derived result (`walk_test_report` from
-[`PhysioMoCap::instrumented10mWT`](https://x-biosignal.r-universe.dev/PhysioMoCap/reference/instrumented10mWT.html)
+[`PhysioMoCap::instrumented10mWT`](https://x-biosignal.github.io/PhysioMoCap//reference/instrumented10mWT.html)
 or `gait_parameters` from
-[`PhysioMoCap::calculateGaitParameters`](https://x-biosignal.r-universe.dev/PhysioMoCap/reference/calculateGaitParameters.html)).
+[`PhysioMoCap::calculateGaitParameters`](https://x-biosignal.github.io/PhysioMoCap//reference/calculateGaitParameters.html)).
 
 ## Usage
 

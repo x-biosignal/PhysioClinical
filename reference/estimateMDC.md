@@ -4,7 +4,7 @@ Estimates the MDC from a test-retest reliability study: the intraclass
 correlation gives the reliability, the standard error of measurement is
 \\SD\sqrt{1 - ICC}\\, and \\MDC = SEM \times z \times \sqrt{2}\\
 (delegating to
-[`PhysioCore::icc`](https://x-biosignal.r-universe.dev/PhysioCore/reference/icc.html)/`sem`/`mdc`).
+[`PhysioCore::icc`](https://x-biosignal.github.io/PhysioCore//reference/icc.html)/`sem`/`mdc`).
 
 ## Usage
 
@@ -35,7 +35,7 @@ estimateMDC(
 - model:
 
   ICC model passed to
-  [`PhysioCore::icc`](https://x-biosignal.r-universe.dev/PhysioCore/reference/icc.html)
+  [`PhysioCore::icc`](https://x-biosignal.github.io/PhysioCore//reference/icc.html)
   (default `"twoway"`).
 
 ## Value

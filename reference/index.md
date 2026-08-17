@@ -12,6 +12,8 @@
   : Governed normative reference
 - [`GovernedNormativeReference()`](https://x-biosignal.github.io/PhysioClinical/reference/GovernedNormativeReference.md)
   : Construct a governed normative reference
+- [`applyEquating()`](https://x-biosignal.github.io/PhysioClinical/reference/applyEquating.md)
+  : Apply a score crosswalk to new values
 - [`as.data.frame(`*`<ClinicalScore>`*`)`](https://x-biosignal.github.io/PhysioClinical/reference/as.data.frame.ClinicalScore.md)
   : Convert a ClinicalScore to a one-row data.frame
 - [`classifyResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/classifyResponder.md)
@@ -19,6 +21,8 @@
   : Dual MDC-vs-MCID responder classification
 - [`defineGoal()`](https://x-biosignal.github.io/PhysioClinical/reference/defineGoal.md)
   : Define a Goal Attainment Scaling goal
+- [`equateScores()`](https://x-biosignal.github.io/PhysioClinical/reference/equateScores.md)
+  : Equate one clinical score scale to another (build a crosswalk)
 - [`estimateMCID_anchor()`](https://x-biosignal.github.io/PhysioClinical/reference/estimateMCID_anchor.md)
   : Anchor-based MCID
 - [`estimateMCID_distribution()`](https://x-biosignal.github.io/PhysioClinical/reference/estimateMCID_distribution.md)
@@ -49,6 +53,12 @@
   : Batch normative deviation over a metric table
 - [`normativeZScore()`](https://x-biosignal.github.io/PhysioClinical/reference/normativeZScore.md)
   : Normative z-score / percentile for an observation
+- [`raschAnalyze()`](https://x-biosignal.github.io/PhysioClinical/reference/raschAnalyze.md)
+  : Rasch (interval) analysis of a clinical ADL/IADL instrument
+- [`raschRecode()`](https://x-biosignal.github.io/PhysioClinical/reference/raschRecode.md)
+  : Recode clinical instrument responses to consecutive Rasch categories
+- [`raschResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/raschResponder.md)
+  : Responder analysis of pre-to-post change on the Rasch interval scale
 - [`registerInstrument()`](https://x-biosignal.github.io/PhysioClinical/reference/registerInstrument.md)
   : Register a clinical instrument
 - [`registerNormative()`](https://x-biosignal.github.io/PhysioClinical/reference/registerNormative.md)
@@ -59,6 +69,8 @@
   : Score a 6-minute walk test (6MWT)
 - [`scoreARAT()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreARAT.md)
   : Score the Action Research Arm Test (ARAT)
+- [`scoreBarthel()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBarthel.md)
+  : Score the Barthel Index (basic activities of daily living)
 - [`scoreBerg()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBerg.md)
   : Score the Berg Balance Scale (BBS)
 - [`scoreFAM()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreFAM.md)
@@ -73,6 +85,10 @@
   : Score Goal Attainment Scaling (GAS T-score)
 - [`scoreInstrument()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreInstrument.md)
   : Score item responses against a clinical instrument
+- [`scoreKatz()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreKatz.md)
+  : Score the Katz Index of Independence in ADL
+- [`scoreLawton()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreLawton.md)
+  : Score the Lawton-Brody IADL scale (instrumental ADL)
 - [`scoreMAS()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMAS.md)
   : Score a Modified Ashworth Scale (MAS) rating
 - [`scoreMRS()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMRS.md)

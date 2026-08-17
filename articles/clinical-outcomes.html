@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +110,7 @@ assessment at baseline and follow-up.</p>
 <span><span class="co">#&gt; baseline followup </span></span>
 <span><span class="co">#&gt;       33       47</span></span></code></pre></div>
 <p>If you instead start from a table of already-scored assessments,
-<code><a href="https://x-biosignal.r-universe.dev/PhysioIO/reference/readClinicalMetadataCSV.html" class="external-link">PhysioIO::readClinicalMetadataCSV()</a></code> reads the long-format
+<code><a href="https://x-biosignal.github.io/PhysioIO//reference/readClinicalMetadataCSV.html" class="external-link">PhysioIO::readClinicalMetadataCSV()</a></code> reads the long-format
 (<code>subject_id, visit_id, scale_name, scale_score</code>) layout into
 the same workflow.</p>
 </div>
@@ -201,9 +201,9 @@ demonstration.</p>
 <p>With <code>PhysioAnnotationHub</code>, every instrument links to WHO
 ICF categories, and a condition’s published Core Set is available.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">PhysioAnnotationHub</span><span class="fu">::</span><span class="fu"><a href="https://x-biosignal.r-universe.dev/PhysioAnnotationHub/reference/tagICF.html" class="external-link">tagICF</a></span><span class="op">(</span><span class="st">"berg"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu">PhysioAnnotationHub</span><span class="fu">::</span><span class="fu"><a href="https://x-biosignal.github.io/PhysioAnnotationHub//reference/tagICF.html" class="external-link">tagICF</a></span><span class="op">(</span><span class="st">"berg"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "b710" "b755"</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">PhysioAnnotationHub</span><span class="fu">::</span><span class="fu"><a href="https://x-biosignal.r-universe.dev/PhysioAnnotationHub/reference/getCoreSet.html" class="external-link">getCoreSet</a></span><span class="op">(</span><span class="st">"Stroke"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"icf_code"</span>, <span class="st">"category_title"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu">PhysioAnnotationHub</span><span class="fu">::</span><span class="fu"><a href="https://x-biosignal.github.io/PhysioAnnotationHub//reference/getCoreSet.html" class="external-link">getCoreSet</a></span><span class="op">(</span><span class="st">"Stroke"</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"icf_code"</span>, <span class="st">"category_title"</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
 <span><span class="co">#&gt;   icf_code               category_title</span></span>
 <span><span class="co">#&gt; 1     b110      Consciousness functions</span></span>
 <span><span class="co">#&gt; 2     b114        Orientation functions</span></span>
