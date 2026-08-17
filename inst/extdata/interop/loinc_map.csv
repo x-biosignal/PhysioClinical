@@ -1,0 +1,14 @@
+instrument,subscale,loinc_code,display,ucum_unit
+gait_speed,total,72106-8,Gait speed 10 meter walk test,m/s
+6mwt,total,,Six-minute walk test distance,m
+tug,total,,Timed Up and Go test,s
+fma_ue,total,,Fugl-Meyer Assessment upper extremity motor score,{score}
+fma_le,total,,Fugl-Meyer Assessment lower extremity motor score,{score}
+berg,total,,Berg Balance Scale total score,{score}
+arat,total,,Action Research Arm Test total score,{score}
+nihss,total,,NIH Stroke Scale total score,{score}
+mrs,total,,Modified Rankin Scale,{score}
+fim,total,,Functional Independence Measure total score,{score}
+fim,motor,,FIM motor subscale,{score}
+fim,cognitive,,FIM cognitive subscale,{score}
+fam,total,,Functional Assessment Measure total score,{score}

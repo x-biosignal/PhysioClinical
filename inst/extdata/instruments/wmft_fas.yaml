@@ -1,0 +1,39 @@
+id: wmft_fas
+name: Wolf Motor Function Test, Functional Ability Scale
+version: '1.0'
+source_ref: 'Wolf SL et al. (2001) Stroke 32:1635-1639.'
+item_type: ordinal
+aggregation: mean
+direction: higher_better
+items:
+  - task_01
+  - task_02
+  - task_03
+  - task_04
+  - task_05
+  - task_06
+  - task_07
+  - task_08
+  - task_09
+  - task_10
+  - task_11
+  - task_12
+  - task_13
+  - task_14
+  - task_15
+item_ranges:
+  task_01: [0, 5]
+  task_02: [0, 5]
+  task_03: [0, 5]
+  task_04: [0, 5]
+  task_05: [0, 5]
+  task_06: [0, 5]
+  task_07: [0, 5]
+  task_08: [0, 5]
+  task_09: [0, 5]
+  task_10: [0, 5]
+  task_11: [0, 5]
+  task_12: [0, 5]
+  task_13: [0, 5]
+  task_14: [0, 5]
+  task_15: [0, 5]
