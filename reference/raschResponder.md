@@ -3,9 +3,11 @@
 Classifies each person's change between two occasions using interval
 (logit) measures from
 [`raschAnalyze()`](https://x-biosignal.github.io/PhysioClinical/reference/raschAnalyze.md)
-/ `PhysioAppKit::pcm_measure()`. The Rasch model's own standard errors
-give a distribution-free standard error of measurement and hence the
-Minimal Detectable Change; the pre/post change is then run through
+/
+[`PhysioAppKit::pcm_measure()`](https://x-biosignal.github.io/PhysioAppKit/reference/pcm_measure.html).
+The Rasch model's own standard errors give a distribution-free standard
+error of measurement and hence the Minimal Detectable Change; the
+pre/post change is then run through
 [`mdcResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/mdcResponder.md)
 (reliable change) and, when an MCID on the logit scale is supplied,
 [`classifyResponder()`](https://x-biosignal.github.io/PhysioClinical/reference/classifyResponder.md)

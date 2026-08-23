@@ -36,14 +36,16 @@ raschAnalyze(instrument, responses, model = c("PCM", "RSM"), ...)
 
 - ...:
 
-  Passed to `PhysioAppKit::pcm_measure()`.
+  Passed to
+  [`PhysioAppKit::pcm_measure()`](https://x-biosignal.github.io/PhysioAppKit/reference/pcm_measure.html).
 
 ## Value
 
-The `poly_rasch` fit (see `PhysioAppKit::pcm_measure()`) with an added
-class `clin_rasch` and extra fields: `instrument` (id), `item_hierarchy`
-(items ordered hardest-to-easiest by calibrated location) and `recoded`
-(the category matrix analysed).
+The `poly_rasch` fit (see
+[`PhysioAppKit::pcm_measure()`](https://x-biosignal.github.io/PhysioAppKit/reference/pcm_measure.html))
+with an added class `clin_rasch` and extra fields: `instrument` (id),
+`item_hierarchy` (items ordered hardest-to-easiest by calibrated
+location) and `recoded` (the category matrix analysed).
 
 ## Details
 
@@ -53,7 +55,7 @@ Requires the suggested package PhysioAppKit (the domain-neutral engine).
 
 [`raschRecode()`](https://x-biosignal.github.io/PhysioClinical/reference/raschRecode.md),
 [`scoreBarthel()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBarthel.md),
-`PhysioAppKit::pcm_measure()`
+[`PhysioAppKit::pcm_measure()`](https://x-biosignal.github.io/PhysioAppKit/reference/pcm_measure.html)
 
 ## Examples
 
@@ -72,6 +74,16 @@ if (requireNamespace("PhysioAppKit", quietly = TRUE)) {
   fit <- raschAnalyze("barthel", resp)
   fit$item_hierarchy
 }
-#> Error: 'pcm_measure' is not an exported object from 'namespace:PhysioAppKit'
+#>          item   location        se      infit     outfit disordered
+#> 1     bathing  0.5295996 0.8043889 0.09322405 0.04509349      FALSE
+#> 2    grooming  0.5295996 0.8043889 0.09322405 0.04509349      FALSE
+#> 3   transfers  0.2249286 0.5335115 0.11378499 0.10444891      FALSE
+#> 4    mobility  0.2249286 0.5335115 0.11378499 0.10444891      FALSE
+#> 5     feeding -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
+#> 6    dressing -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
+#> 7      bowels -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
+#> 8     bladder -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
+#> 9  toilet_use -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
+#> 10     stairs -0.2007309 0.6806820 0.06327283 0.05849089      FALSE
 # }
 ```

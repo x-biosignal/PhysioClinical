@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,16 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioExperiment/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.3.0" id="physioclinical-030">PhysioClinical 0.3.0<a class="anchor" aria-label="anchor" href="#physioclinical-030"></a></h2>
+<p>Tier-2 clinical outcome content: cognition, pain, muscle strength, fatigue and health-related quality of life. Eight validated instruments were added, each as a bundled YAML specification (auto-registered, discoverable via <code><a href="../reference/listInstruments.html">listInstruments()</a></code>) plus a typed scoring wrapper delegating to <code><a href="../reference/scoreInstrument.html">scoreInstrument()</a></code>, with provenance and interpretation strata.</p>
+<ul><li>Cognition: <code><a href="../reference/scoreMMSE.html">scoreMMSE()</a></code> (Mini-Mental State Examination, 0-30 with six domain subscales) and <code><a href="../reference/scoreMoCA.html">scoreMoCA()</a></code> (Montreal Cognitive Assessment, 0-30, the &lt;26 impairment cutoff).</li>
+<li>Pain: <code><a href="../reference/scorePainNRS.html">scorePainNRS()</a></code> (0-10 Numeric Rating Scale with none/mild/moderate/ severe bands) and <code><a href="../reference/scoreBPI.html">scoreBPI()</a></code> (Brief Pain Inventory severity and interference mean subscales).</li>
+<li>Muscle strength: <code><a href="../reference/scoreMRCSum.html">scoreMRCSum()</a></code> (Medical Research Council sum score, 0-60, with upper-limb/lower-limb/left/right subscales and the &lt;48 weakness cutoff).</li>
+<li>Fatigue: <code><a href="../reference/scoreFSS.html">scoreFSS()</a></code> (Fatigue Severity Scale, mean 1-7, the &gt;=4 cutoff) and <code><a href="../reference/scoreMFIS.html">scoreMFIS()</a></code> (Modified Fatigue Impact Scale, 0-84 with physical/cognitive/ psychosocial subscales, the &gt;=38 cutoff).</li>
+<li>Health-related quality of life: <code><a href="../reference/scoreEQ5D5L.html">scoreEQ5D5L()</a></code> (EQ-5D-5L descriptive system scored as the 5-25 level-sum score; the country-specific utility index and EQ-VAS are out of scope and documented as such).</li>
+<li>Clinimetrics: added the Farrar (2001) NRS pain MCID (~2 points) to the MCID/MDC store.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.2.0" id="physioclinical-020">PhysioClinical 0.2.0<a class="anchor" aria-label="anchor" href="#physioclinical-020"></a></h2>
 <p>ADL/IADL instruments and interval (Rasch) analysis.</p>

@@ -1,5 +1,45 @@
 # Changelog
 
+## PhysioClinical 0.3.0
+
+Tier-2 clinical outcome content: cognition, pain, muscle strength,
+fatigue and health-related quality of life. Eight validated instruments
+were added, each as a bundled YAML specification (auto-registered,
+discoverable via
+[`listInstruments()`](https://x-biosignal.github.io/PhysioClinical/reference/listInstruments.md))
+plus a typed scoring wrapper delegating to
+[`scoreInstrument()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreInstrument.md),
+with provenance and interpretation strata.
+
+- Cognition:
+  [`scoreMMSE()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMMSE.md)
+  (Mini-Mental State Examination, 0-30 with six domain subscales) and
+  [`scoreMoCA()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMoCA.md)
+  (Montreal Cognitive Assessment, 0-30, the \<26 impairment cutoff).
+- Pain:
+  [`scorePainNRS()`](https://x-biosignal.github.io/PhysioClinical/reference/scorePainNRS.md)
+  (0-10 Numeric Rating Scale with none/mild/moderate/ severe bands) and
+  [`scoreBPI()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBPI.md)
+  (Brief Pain Inventory severity and interference mean subscales).
+- Muscle strength:
+  [`scoreMRCSum()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMRCSum.md)
+  (Medical Research Council sum score, 0-60, with
+  upper-limb/lower-limb/left/right subscales and the \<48 weakness
+  cutoff).
+- Fatigue:
+  [`scoreFSS()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreFSS.md)
+  (Fatigue Severity Scale, mean 1-7, the \>=4 cutoff) and
+  [`scoreMFIS()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreMFIS.md)
+  (Modified Fatigue Impact Scale, 0-84 with physical/cognitive/
+  psychosocial subscales, the \>=38 cutoff).
+- Health-related quality of life:
+  [`scoreEQ5D5L()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreEQ5D5L.md)
+  (EQ-5D-5L descriptive system scored as the 5-25 level-sum score; the
+  country-specific utility index and EQ-VAS are out of scope and
+  documented as such).
+- Clinimetrics: added the Farrar (2001) NRS pain MCID (~2 points) to the
+  MCID/MDC store.
+
 ## PhysioClinical 0.2.0
 
 ADL/IADL instruments and interval (Rasch) analysis.
