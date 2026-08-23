@@ -1,5 +1,25 @@
 # Changelog
 
+## PhysioClinical 0.4.0
+
+Range-of-motion (goniometry) reference values.
+
+- [`romReference()`](https://x-biosignal.github.io/PhysioClinical/reference/romReference.md):
+  packaged normal active ROM reference angles for the major peripheral
+  joints (shoulder, elbow, forearm, wrist, hip, knee, ankle; 25
+  motions), the consensus clinical goniometry values (AAOS; Norkin &
+  White).
+- [`romNormalcy()`](https://x-biosignal.github.io/PhysioClinical/reference/romNormalcy.md):
+  compares a measured joint ROM against the reference angle and,
+  optionally, the contralateral side (percent of normal, deficit vs
+  reference, deficit vs the other side).
+- These are single reference angles, not a distribution: for an
+  age/sex-stratified z-score, build a
+  [`GovernedNormativeReference()`](https://x-biosignal.github.io/PhysioClinical/reference/GovernedNormativeReference.md)
+  from a cohort dataset (e.g. Soucie et al. 2011) and use
+  [`normativeZScore()`](https://x-biosignal.github.io/PhysioClinical/reference/normativeZScore.md).
+  Documented as such (no SD is fabricated).
+
 ## PhysioClinical 0.3.0
 
 Tier-2 clinical outcome content: cognition, pain, muscle strength,

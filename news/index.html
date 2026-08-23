@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,15 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioExperiment/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.4.0" id="physioclinical-040">PhysioClinical 0.4.0<a class="anchor" aria-label="anchor" href="#physioclinical-040"></a></h2>
+<p>Range-of-motion (goniometry) reference values.</p>
+<ul><li>
+<code><a href="../reference/romReference.html">romReference()</a></code>: packaged normal active ROM reference angles for the major peripheral joints (shoulder, elbow, forearm, wrist, hip, knee, ankle; 25 motions), the consensus clinical goniometry values (AAOS; Norkin &amp; White).</li>
+<li>
+<code><a href="../reference/romNormalcy.html">romNormalcy()</a></code>: compares a measured joint ROM against the reference angle and, optionally, the contralateral side (percent of normal, deficit vs reference, deficit vs the other side).</li>
+<li>These are single reference angles, not a distribution: for an age/sex-stratified z-score, build a <code><a href="../reference/GovernedNormativeReference.html">GovernedNormativeReference()</a></code> from a cohort dataset (e.g. Soucie et al. 2011) and use <code><a href="../reference/normativeZScore.html">normativeZScore()</a></code>. Documented as such (no SD is fabricated).</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.3.0" id="physioclinical-030">PhysioClinical 0.3.0<a class="anchor" aria-label="anchor" href="#physioclinical-030"></a></h2>
 <p>Tier-2 clinical outcome content: cognition, pain, muscle strength, fatigue and health-related quality of life. Eight validated instruments were added, each as a bundled YAML specification (auto-registered, discoverable via <code><a href="../reference/listInstruments.html">listInstruments()</a></code>) plus a typed scoring wrapper delegating to <code><a href="../reference/scoreInstrument.html">scoreInstrument()</a></code>, with provenance and interpretation strata.</p>

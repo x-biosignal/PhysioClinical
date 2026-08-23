@@ -63,6 +63,10 @@
   : Register a clinical instrument
 - [`registerNormative()`](https://x-biosignal.github.io/PhysioClinical/reference/registerNormative.md)
   : Register a normative reference in the versioned registry
+- [`romNormalcy()`](https://x-biosignal.github.io/PhysioClinical/reference/romNormalcy.md)
+  : Compare a measured joint ROM to the reference (and the other side)
+- [`romReference()`](https://x-biosignal.github.io/PhysioClinical/reference/romReference.md)
+  : Joint range-of-motion reference values (goniometry)
 - [`score10MWT()`](https://x-biosignal.github.io/PhysioClinical/reference/score10MWT.md)
   : Score a 10-metre walk test (10mWT)
 - [`score6MWT()`](https://x-biosignal.github.io/PhysioClinical/reference/score6MWT.md)
