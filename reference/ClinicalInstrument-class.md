@@ -71,6 +71,13 @@ show(object)
   1.5 - the numeric vector of allowed values. Items absent from the list
   are validated only against `item_ranges` / `item_type`.
 
+- `item_recode`:
+
+  Optional named list; for an item whose raw responses are recoded
+  before scoring (e.g. the SF-36 0-100 recode, or a reversed item), a
+  named numeric map from the raw response (a character key) to the
+  scored value. Applied after validation, before aggregation.
+
 - `source_ref`:
 
   Citation / provenance string.

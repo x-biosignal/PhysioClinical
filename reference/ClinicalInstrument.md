@@ -17,6 +17,7 @@ ClinicalInstrument(
   direction = "higher_better",
   strata = list(),
   item_values = list(),
+  item_recode = list(),
   source_ref = NA_character_
 )
 ```
@@ -24,7 +25,7 @@ ClinicalInstrument(
 ## Arguments
 
 - id, name, version, items, item_ranges, item_type, subscales,
-  aggregation, direction, strata, item_values, source_ref:
+  aggregation, direction, strata, item_values, item_recode, source_ref:
 
   Instrument specification fields (see the class slots).
 

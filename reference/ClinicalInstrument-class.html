@@ -13,7 +13,7 @@ strata."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,6 +135,13 @@ and <code>upper</code>.</p></dd>
 non-integer) admissible value set - e.g. the Modified Ashworth <code>1+</code> = 1.5 -
 the numeric vector of allowed values. Items absent from the list are
 validated only against <code>item_ranges</code> / <code>item_type</code>.</p></dd>
+
+
+<dt><code>item_recode</code></dt>
+<dd><p>Optional named list; for an item whose raw responses are
+recoded before scoring (e.g. the SF-36 0-100 recode, or a reversed item), a
+named numeric map from the raw response (a character key) to the scored
+value. Applied after validation, before aggregation.</p></dd>
 
 
 <dt><code>source_ref</code></dt>

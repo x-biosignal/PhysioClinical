@@ -1,5 +1,28 @@
 # Changelog
 
+## PhysioClinical 0.5.0
+
+SF-36 and PROMIS health-status scoring; a general item-recode step in
+the engine.
+
+- [`scoreSF36()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreSF36.md):
+  the SF-36 / RAND 36-Item Health Survey 1.0 — each item is recoded to
+  0-100 and averaged into the eight subscales (physical functioning,
+  role-physical, role-emotional, energy/fatigue, emotional well-being,
+  social functioning, pain, general health). Norm-based T-scores and the
+  PCS/MCS summaries use proprietary weights and are out of scope.
+- [`scorePROMIS()`](https://x-biosignal.github.io/PhysioClinical/reference/scorePROMIS.md):
+  graded-response-model (Samejima) EAP scoring on the PROMIS T-score
+  metric (mean 50, SD 10) for any GRM short form;
+  [`promisRawToT()`](https://x-biosignal.github.io/PhysioClinical/reference/promisRawToT.md)
+  for the summed-score-to-T-score table path. No item calibrations are
+  bundled — supply the official parameters / conversion tables from
+  HealthMeasures.
+- `ClinicalInstrument` gains an optional `item_recode` map (raw response
+  -\> scored value, applied after validation and before aggregation), so
+  recoded / reverse-scored instruments such as the SF-36 are handled by
+  the generic engine.
+
 ## PhysioClinical 0.4.0
 
 Range-of-motion (goniometry) reference values.

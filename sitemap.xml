@@ -35,6 +35,7 @@
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/mdcResponder.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/normativeDeviation.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/normativeZScore.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioClinical/reference/promisRawToT.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/raschAnalyze.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/raschRecode.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/raschResponder.html</loc></url>
@@ -65,7 +66,9 @@
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreMRS.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreMoCA.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreNIHSS.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scorePROMIS.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scorePainNRS.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreSF36.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreTUG.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/scoreWMFT.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioClinical/reference/show-GovernedNormativeReference-method.html</loc></url>

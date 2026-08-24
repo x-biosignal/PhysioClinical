@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,16 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioExperiment/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.0" id="physioclinical-050">PhysioClinical 0.5.0<a class="anchor" aria-label="anchor" href="#physioclinical-050"></a></h2>
+<p>SF-36 and PROMIS health-status scoring; a general item-recode step in the engine.</p>
+<ul><li>
+<code><a href="../reference/scoreSF36.html">scoreSF36()</a></code>: the SF-36 / RAND 36-Item Health Survey 1.0 — each item is recoded to 0-100 and averaged into the eight subscales (physical functioning, role-physical, role-emotional, energy/fatigue, emotional well-being, social functioning, pain, general health). Norm-based T-scores and the PCS/MCS summaries use proprietary weights and are out of scope.</li>
+<li>
+<code><a href="../reference/scorePROMIS.html">scorePROMIS()</a></code>: graded-response-model (Samejima) EAP scoring on the PROMIS T-score metric (mean 50, SD 10) for any GRM short form; <code><a href="../reference/promisRawToT.html">promisRawToT()</a></code> for the summed-score-to-T-score table path. No item calibrations are bundled — supply the official parameters / conversion tables from HealthMeasures.</li>
+<li>
+<code>ClinicalInstrument</code> gains an optional <code>item_recode</code> map (raw response -&gt; scored value, applied after validation and before aggregation), so recoded / reverse-scored instruments such as the SF-36 are handled by the generic engine.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.4.0" id="physioclinical-040">PhysioClinical 0.4.0<a class="anchor" aria-label="anchor" href="#physioclinical-040"></a></h2>
 <p>Range-of-motion (goniometry) reference values.</p>

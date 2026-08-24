@@ -53,6 +53,8 @@
   : Batch normative deviation over a metric table
 - [`normativeZScore()`](https://x-biosignal.github.io/PhysioClinical/reference/normativeZScore.md)
   : Normative z-score / percentile for an observation
+- [`promisRawToT()`](https://x-biosignal.github.io/PhysioClinical/reference/promisRawToT.md)
+  : Convert a PROMIS summed score to a T-score via a lookup table
 - [`raschAnalyze()`](https://x-biosignal.github.io/PhysioClinical/reference/raschAnalyze.md)
   : Rasch (interval) analysis of a clinical ADL/IADL instrument
 - [`raschRecode()`](https://x-biosignal.github.io/PhysioClinical/reference/raschRecode.md)
@@ -113,8 +115,12 @@
   : Score the Montreal Cognitive Assessment (MoCA)
 - [`scoreNIHSS()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreNIHSS.md)
   : Score the NIH Stroke Scale (NIHSS)
+- [`scorePROMIS()`](https://x-biosignal.github.io/PhysioClinical/reference/scorePROMIS.md)
+  : Score a PROMIS (or other GRM) short form by EAP
 - [`scorePainNRS()`](https://x-biosignal.github.io/PhysioClinical/reference/scorePainNRS.md)
   : Score a Pain Numeric Rating Scale (0-10)
+- [`scoreSF36()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreSF36.md)
+  : Score the SF-36 / RAND-36 Health Survey
 - [`scoreTUG()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreTUG.md)
   : Score a Timed Up and Go test (TUG)
 - [`scoreWMFT()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreWMFT.md)
