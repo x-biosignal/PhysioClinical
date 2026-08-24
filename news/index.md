@@ -1,5 +1,16 @@
 # Changelog
 
+## PhysioClinical 0.6.0
+
+- [`scoreCohort()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreCohort.md):
+  batch-scores a per-subject table of instrument responses into a list
+  of `ClinicalScore` objects tagged with `subject_id`, ready to drive
+  the existing FHIR / OMOP / CDISC exporters
+  ([`writeFHIRBundle()`](https://x-biosignal.github.io/PhysioClinical/reference/writeFHIRBundle.md),
+  [`toOMOP()`](https://x-biosignal.github.io/PhysioClinical/reference/toOMOP.md),
+  [`toCDISC_QS()`](https://x-biosignal.github.io/PhysioClinical/reference/toCDISC_QS.md))
+  from the core data model rather than from hand-built scores.
+
 ## PhysioClinical 0.5.0
 
 SF-36 and PROMIS health-status scoring; a general item-recode step in

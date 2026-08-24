@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,11 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioExperiment/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.6.0" id="physioclinical-060">PhysioClinical 0.6.0<a class="anchor" aria-label="anchor" href="#physioclinical-060"></a></h2>
+<ul><li>
+<code><a href="../reference/scoreCohort.html">scoreCohort()</a></code>: batch-scores a per-subject table of instrument responses into a list of <code>ClinicalScore</code> objects tagged with <code>subject_id</code>, ready to drive the existing FHIR / OMOP / CDISC exporters (<code><a href="../reference/writeFHIRBundle.html">writeFHIRBundle()</a></code>, <code><a href="../reference/toOMOP.html">toOMOP()</a></code>, <code><a href="../reference/toCDISC_QS.html">toCDISC_QS()</a></code>) from the core data model rather than from hand-built scores.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.0" id="physioclinical-050">PhysioClinical 0.5.0<a class="anchor" aria-label="anchor" href="#physioclinical-050"></a></h2>
 <p>SF-36 and PROMIS health-status scoring; a general item-recode step in the engine.</p>

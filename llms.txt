@@ -111,6 +111,9 @@ Community and policy documents live in the umbrella repository:
   : Score the Barthel Index (basic activities of daily living)
 - [`scoreBerg()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreBerg.md)
   : Score the Berg Balance Scale (BBS)
+- [`scoreCohort()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreCohort.md)
+  : Score a cohort's instrument responses into interop-ready
+  ClinicalScores
 - [`scoreEQ5D5L()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreEQ5D5L.md)
   : Score the EQ-5D-5L descriptive system (level-sum score)
 - [`scoreFAM()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreFAM.md)
