@@ -1,0 +1,46 @@
+id: barthel
+name: Barthel Index (basic activities of daily living)
+version: '1.0'
+source_ref: 'Mahoney FI, Barthel DW (1965) Md State Med J 14:61-65; weighting per Collin C et al. (1988) Int Disabil Stud 10:61-63; severity bands per Shah S et al. (1989) J Clin Epidemiol 42:703-709.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - feeding
+  - bathing
+  - grooming
+  - dressing
+  - bowels
+  - bladder
+  - toilet_use
+  - transfers
+  - mobility
+  - stairs
+item_ranges:
+  feeding: [0, 10]
+  bathing: [0, 5]
+  grooming: [0, 5]
+  dressing: [0, 10]
+  bowels: [0, 10]
+  bladder: [0, 10]
+  toilet_use: [0, 10]
+  transfers: [0, 15]
+  mobility: [0, 15]
+  stairs: [0, 10]
+item_values:
+  feeding: [0, 5, 10]
+  bathing: [0, 5]
+  grooming: [0, 5]
+  dressing: [0, 5, 10]
+  bowels: [0, 5, 10]
+  bladder: [0, 5, 10]
+  toilet_use: [0, 5, 10]
+  transfers: [0, 5, 10, 15]
+  mobility: [0, 5, 10, 15]
+  stairs: [0, 5, 10]
+strata:
+  - {label: total_dependence, lower: 0, upper: 20}
+  - {label: severe_dependence, lower: 21, upper: 60}
+  - {label: moderate_dependence, lower: 61, upper: 90}
+  - {label: slight_dependence, lower: 91, upper: 99}
+  - {label: independent, lower: 100, upper: 100}

@@ -1,0 +1,35 @@
+Package: PhysioClinical
+Type: Package
+Title: Clinical Outcome Measures and Responder Analysis
+Version: 0.7.0
+Authors@R: person("Yusuke", "Matsui", role = c("aut", "cre"), email = "mail.to.matsui@gmail.com")
+Description: Validated clinical outcome-measure scoring (FMA, Berg, ARAT, TUG,
+    6MWT, Barthel, Katz, Lawton-Brody IADL, ...), MDC/MCID responder
+    classification, ICF tagging, interval (Rasch) analysis of ordinal ADL/IADL
+    instruments, and normative deviation scoring for the x-biosignal
+    rehabilitation ecosystem.
+Depends: R (>= 4.2)
+Imports:
+    PhysioCore,
+    methods,
+    stats,
+    utils,
+    yaml
+Suggests:
+    testthat (>= 3.2.0),
+    jsonlite,
+    jsonvalidate,
+    PhysioAppKit,
+    PhysioMoCap,
+    PhysioIO,
+    PhysioAnnotationHub,
+    knitr,
+    rmarkdown
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+URL: https://github.com/x-biosignal/PhysioClinical, https://x-biosignal.github.io/PhysioClinical/
+BugReports: https://github.com/x-biosignal/PhysioExperiment/issues
+Config/testthat/edition: 3

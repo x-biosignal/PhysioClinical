@@ -1,0 +1,30 @@
+id: fss
+name: Fatigue Severity Scale
+version: '1.0'
+source_ref: 'Krupp LB, LaRocca NG, Muir-Nash J, Steinberg AD (1989) Arch Neurol 46:1121-1123. Nine statements rated 1 (strongly disagree) to 7 (strongly agree); a mean score >= 4 indicates clinically significant fatigue.'
+item_type: ordinal
+aggregation: mean
+direction: higher_worse
+items:
+  - item1
+  - item2
+  - item3
+  - item4
+  - item5
+  - item6
+  - item7
+  - item8
+  - item9
+item_ranges:
+  item1: [1, 7]
+  item2: [1, 7]
+  item3: [1, 7]
+  item4: [1, 7]
+  item5: [1, 7]
+  item6: [1, 7]
+  item7: [1, 7]
+  item8: [1, 7]
+  item9: [1, 7]
+strata:
+  - {label: no_significant_fatigue, lower: 1, upper: 3.99}
+  - {label: significant_fatigue, lower: 4, upper: 7}

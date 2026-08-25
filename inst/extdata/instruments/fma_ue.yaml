@@ -1,0 +1,84 @@
+id: fma_ue
+name: Fugl-Meyer Assessment, Upper Extremity (motor)
+version: '1.0'
+source_ref: 'Fugl-Meyer AR et al. (1975) Scand J Rehabil Med 7:13-31; Woodbury ML et al. (2013) Arch Phys Med Rehabil 94:1527-33 (strata).'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - A_01
+  - A_02
+  - A_03
+  - A_04
+  - A_05
+  - A_06
+  - A_07
+  - A_08
+  - A_09
+  - A_10
+  - A_11
+  - A_12
+  - A_13
+  - A_14
+  - A_15
+  - A_16
+  - A_17
+  - A_18
+  - B_01
+  - B_02
+  - B_03
+  - B_04
+  - B_05
+  - C_01
+  - C_02
+  - C_03
+  - C_04
+  - C_05
+  - C_06
+  - C_07
+  - D_01
+  - D_02
+  - D_03
+item_ranges:
+  A_01: [0, 2]
+  A_02: [0, 2]
+  A_03: [0, 2]
+  A_04: [0, 2]
+  A_05: [0, 2]
+  A_06: [0, 2]
+  A_07: [0, 2]
+  A_08: [0, 2]
+  A_09: [0, 2]
+  A_10: [0, 2]
+  A_11: [0, 2]
+  A_12: [0, 2]
+  A_13: [0, 2]
+  A_14: [0, 2]
+  A_15: [0, 2]
+  A_16: [0, 2]
+  A_17: [0, 2]
+  A_18: [0, 2]
+  B_01: [0, 2]
+  B_02: [0, 2]
+  B_03: [0, 2]
+  B_04: [0, 2]
+  B_05: [0, 2]
+  C_01: [0, 2]
+  C_02: [0, 2]
+  C_03: [0, 2]
+  C_04: [0, 2]
+  C_05: [0, 2]
+  C_06: [0, 2]
+  C_07: [0, 2]
+  D_01: [0, 2]
+  D_02: [0, 2]
+  D_03: [0, 2]
+subscales:
+  shoulder_elbow_forearm: [A_01, A_02, A_03, A_04, A_05, A_06, A_07, A_08, A_09, A_10, A_11, A_12, A_13, A_14, A_15, A_16, A_17, A_18]
+  wrist: [B_01, B_02, B_03, B_04, B_05]
+  hand: [C_01, C_02, C_03, C_04, C_05, C_06, C_07]
+  coordination_speed: [D_01, D_02, D_03]
+strata:
+  - {label: severe, lower: 0, upper: 25}
+  - {label: moderate, lower: 26, upper: 52}
+  - {label: mild, lower: 53, upper: 66}

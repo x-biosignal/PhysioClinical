@@ -1,0 +1,45 @@
+id: nihss
+name: NIH Stroke Scale
+version: '1.0'
+source_ref: 'Brott T et al. (1989) Stroke 20:864-870.'
+item_type: ordinal
+aggregation: sum
+direction: higher_worse
+items:
+  - loc
+  - loc_questions
+  - loc_commands
+  - gaze
+  - visual
+  - facial_palsy
+  - left_arm
+  - right_arm
+  - left_leg
+  - right_leg
+  - ataxia
+  - sensory
+  - language
+  - dysarthria
+  - extinction
+item_ranges:
+  loc: [0, 3]
+  loc_questions: [0, 2]
+  loc_commands: [0, 2]
+  gaze: [0, 2]
+  visual: [0, 3]
+  facial_palsy: [0, 3]
+  left_arm: [0, 4]
+  right_arm: [0, 4]
+  left_leg: [0, 4]
+  right_leg: [0, 4]
+  ataxia: [0, 2]
+  sensory: [0, 2]
+  language: [0, 3]
+  dysarthria: [0, 2]
+  extinction: [0, 2]
+strata:
+  - {label: no_stroke, lower: 0, upper: 0}
+  - {label: minor, lower: 1, upper: 4}
+  - {label: moderate, lower: 5, upper: 15}
+  - {label: moderate_to_severe, lower: 16, upper: 20}
+  - {label: severe, lower: 21, upper: 42}

@@ -1,0 +1,42 @@
+id: mrc_sum
+name: Medical Research Council Sum Score
+version: '1.0'
+source_ref: 'Kleyweg RP, van der Meche FGA, Schmitz PIM (1991) Muscle Nerve 14:1103-1109; six bilateral movements graded 0-5 (total 0-60). The weakness cutoff (< 48) defines ICU-acquired weakness per De Jonghe B et al. (2002) JAMA 288:2859-2867.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - shoulder_abduction_l
+  - shoulder_abduction_r
+  - elbow_flexion_l
+  - elbow_flexion_r
+  - wrist_extension_l
+  - wrist_extension_r
+  - hip_flexion_l
+  - hip_flexion_r
+  - knee_extension_l
+  - knee_extension_r
+  - ankle_dorsiflexion_l
+  - ankle_dorsiflexion_r
+item_ranges:
+  shoulder_abduction_l: [0, 5]
+  shoulder_abduction_r: [0, 5]
+  elbow_flexion_l: [0, 5]
+  elbow_flexion_r: [0, 5]
+  wrist_extension_l: [0, 5]
+  wrist_extension_r: [0, 5]
+  hip_flexion_l: [0, 5]
+  hip_flexion_r: [0, 5]
+  knee_extension_l: [0, 5]
+  knee_extension_r: [0, 5]
+  ankle_dorsiflexion_l: [0, 5]
+  ankle_dorsiflexion_r: [0, 5]
+subscales:
+  upper_limb: [shoulder_abduction_l, shoulder_abduction_r, elbow_flexion_l, elbow_flexion_r, wrist_extension_l, wrist_extension_r]
+  lower_limb: [hip_flexion_l, hip_flexion_r, knee_extension_l, knee_extension_r, ankle_dorsiflexion_l, ankle_dorsiflexion_r]
+  left: [shoulder_abduction_l, elbow_flexion_l, wrist_extension_l, hip_flexion_l, knee_extension_l, ankle_dorsiflexion_l]
+  right: [shoulder_abduction_r, elbow_flexion_r, wrist_extension_r, hip_flexion_r, knee_extension_r, ankle_dorsiflexion_r]
+strata:
+  - {label: severe_weakness, lower: 0, upper: 35}
+  - {label: weakness, lower: 36, upper: 47}
+  - {label: no_weakness, lower: 48, upper: 60}

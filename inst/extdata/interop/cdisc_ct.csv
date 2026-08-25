@@ -1,0 +1,14 @@
+instrument,subscale,qstestcd,qstest,qscat,ct_status
+gait_speed,total,GAITSPD,Gait Speed 10m Walk Test,GAIT SPEED,sponsor
+6mwt,total,SIXMWT,Six Minute Walk Distance,SIX MINUTE WALK TEST,sponsor
+tug,total,TUG,Timed Up and Go,TIMED UP AND GO,sponsor
+fma_ue,total,FMAUE,Fugl-Meyer Assessment UE Motor,FUGL-MEYER ASSESSMENT,sponsor
+fma_le,total,FMALE,Fugl-Meyer Assessment LE Motor,FUGL-MEYER ASSESSMENT,sponsor
+berg,total,BERGTOT,Berg Balance Scale Total,BERG BALANCE SCALE,sponsor
+arat,total,ARATTOT,Action Research Arm Test Total,ACTION RESEARCH ARM TEST,sponsor
+nihss,total,NIHSS,NIH Stroke Scale Total,NIH STROKE SCALE,sponsor
+mrs,total,MRS,Modified Rankin Scale,MODIFIED RANKIN SCALE,sponsor
+fim,total,FIMTOT,FIM Total Score,FUNCTIONAL INDEPENDENCE MEASURE,sponsor
+fim,motor,FIMMOT,FIM Motor Subscale,FUNCTIONAL INDEPENDENCE MEASURE,sponsor
+fim,cognitive,FIMCOG,FIM Cognitive Subscale,FUNCTIONAL INDEPENDENCE MEASURE,sponsor
+fam,total,FAMTOT,Functional Assessment Measure Total,FUNCTIONAL ASSESSMENT MEASURE,sponsor

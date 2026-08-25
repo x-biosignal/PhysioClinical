@@ -1,0 +1,16 @@
+id: pain_nrs
+name: Pain Numeric Rating Scale (0-10)
+version: '1.0'
+source_ref: 'Cutpoints commonly used in the literature (Hjermstad MJ et al. (2011) J Pain Symptom Manage 41:1073-1093; Boonstra AM et al. (2016) Pain 157:2434-2444); exact boundaries vary by population. An equivalent 0-100 mm Visual Analogue Scale (VAS) measures the same construct on a wider range.'
+item_type: ordinal
+aggregation: sum
+direction: higher_worse
+items:
+  - pain_intensity
+item_ranges:
+  pain_intensity: [0, 10]
+strata:
+  - {label: no_pain, lower: 0, upper: 0}
+  - {label: mild, lower: 1, upper: 3}
+  - {label: moderate, lower: 4, upper: 6}
+  - {label: severe, lower: 7, upper: 10}

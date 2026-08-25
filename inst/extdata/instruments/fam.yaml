@@ -1,0 +1,72 @@
+id: fam
+name: Functional Assessment Measure (FIM+FAM)
+version: '1.0'
+source_ref: 'Hall KM et al. (1993) Arch Phys Med Rehabil 74:531-536.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - eating
+  - grooming
+  - bathing
+  - dressing_upper
+  - dressing_lower
+  - toileting
+  - bladder
+  - bowel
+  - transfer_bed_chair
+  - transfer_toilet
+  - transfer_tub_shower
+  - locomotion_walk_wheelchair
+  - locomotion_stairs
+  - swallowing
+  - car_transfer
+  - community_access
+  - comprehension
+  - expression
+  - social_interaction
+  - problem_solving
+  - memory
+  - reading
+  - writing
+  - speech_intelligibility
+  - emotional_status
+  - adjustment_to_limitations
+  - employability
+  - orientation
+  - attention
+  - safety_judgment
+item_ranges:
+  eating: [1, 7]
+  grooming: [1, 7]
+  bathing: [1, 7]
+  dressing_upper: [1, 7]
+  dressing_lower: [1, 7]
+  toileting: [1, 7]
+  bladder: [1, 7]
+  bowel: [1, 7]
+  transfer_bed_chair: [1, 7]
+  transfer_toilet: [1, 7]
+  transfer_tub_shower: [1, 7]
+  locomotion_walk_wheelchair: [1, 7]
+  locomotion_stairs: [1, 7]
+  swallowing: [1, 7]
+  car_transfer: [1, 7]
+  community_access: [1, 7]
+  comprehension: [1, 7]
+  expression: [1, 7]
+  social_interaction: [1, 7]
+  problem_solving: [1, 7]
+  memory: [1, 7]
+  reading: [1, 7]
+  writing: [1, 7]
+  speech_intelligibility: [1, 7]
+  emotional_status: [1, 7]
+  adjustment_to_limitations: [1, 7]
+  employability: [1, 7]
+  orientation: [1, 7]
+  attention: [1, 7]
+  safety_judgment: [1, 7]
+subscales:
+  motor: [eating, grooming, bathing, dressing_upper, dressing_lower, toileting, bladder, bowel, transfer_bed_chair, transfer_toilet, transfer_tub_shower, locomotion_walk_wheelchair, locomotion_stairs, swallowing, car_transfer, community_access]
+  cognitive: [comprehension, expression, social_interaction, problem_solving, memory, reading, writing, speech_intelligibility, emotional_status, adjustment_to_limitations, employability, orientation, attention, safety_judgment]

@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FHIR R4 Observation (subset used by PhysioClinical)",
+  "type": "object",
+  "required": ["resourceType", "status", "code"],
+  "properties": {
+    "resourceType": { "const": "Observation" },
+    "status": {
+      "enum": ["registered", "preliminary", "final", "amended", "corrected",
+               "cancelled", "entered-in-error", "unknown"]
+    },
+    "category": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/CodeableConcept" }
+    },
+    "code": { "$ref": "#/definitions/CodeableConcept" },
+    "subject": { "$ref": "#/definitions/Reference" },
+    "effectiveDateTime": { "type": "string" },
+    "valueQuantity": { "$ref": "#/definitions/Quantity" },
+    "dataAbsentReason": { "$ref": "#/definitions/CodeableConcept" },
+    "derivedFrom": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Reference" }
+    },
+    "component": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code"],
+        "properties": {
+          "code": { "$ref": "#/definitions/CodeableConcept" },
+          "valueQuantity": { "$ref": "#/definitions/Quantity" },
+          "dataAbsentReason": { "$ref": "#/definitions/CodeableConcept" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Coding": {
+      "type": "object",
+      "properties": {
+        "system": { "type": "string" },
+        "code": { "type": "string" },
+        "display": { "type": "string" }
+      },
+      "required": ["code"]
+    },
+    "CodeableConcept": {
+      "type": "object",
+      "anyOf": [
+        { "required": ["coding"] },
+        { "required": ["text"] }
+      ],
+      "properties": {
+        "coding": { "type": "array", "items": { "$ref": "#/definitions/Coding" } },
+        "text": { "type": "string" }
+      }
+    },
+    "Reference": {
+      "type": "object",
+      "required": ["reference"],
+      "properties": { "reference": { "type": "string" } }
+    },
+    "Quantity": {
+      "type": "object",
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string" },
+        "system": { "type": "string" },
+        "code": { "type": "string" }
+      }
+    }
+  }
+}

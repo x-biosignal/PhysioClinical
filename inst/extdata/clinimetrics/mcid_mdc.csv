@@ -1,0 +1,15 @@
+instrument,subscale,population,statistic,value,ci_low,ci_high,method,reference_doi,population_n,provenance_note
+FMA-UE,motor,chronic_stroke_minimal,MCID_anchor,4.25,NA,NA,roc_anchor,10.2522/ptj.20110009,74,Page 2012; chronic stroke with minimal upper-extremity impairment
+FMA-UE,motor,chronic_stroke_moderate,MCID_anchor,7.25,NA,NA,roc_anchor,10.2522/ptj.20110009,74,Page 2012; chronic stroke with moderate upper-extremity impairment
+FMA-UE,motor,chronic_stroke,SEM,2.4,NA,NA,test_retest,10.2522/ptj.20080124,71,Wagner 2008; test-retest SEM in chronic stroke
+FMA-UE,motor,chronic_stroke_minimal,MDC,6.65,NA,NA,derived_sem,10.2522/ptj.20080124,71,MDC95 = 1.96*sqrt(2)*SEM from Wagner 2008 SEM (2.4); paired with Page 2012 minimal-impairment MCID
+ARAT,total,chronic_stroke,MCID_anchor,5.7,NA,NA,anchor,10.1080/165019701750419653,20,Van der Lee 2001; responsiveness in chronic stroke (0-57 scale)
+BBS,total,community_elderly,ICC,0.98,NA,NA,test_retest,10.1093/ptj/82.2.128,96,Steffen 2002; community-dwelling elderly test-retest
+BBS,total,elderly_baseline_45_56,MDC,3.3,NA,NA,distribution,10.2340/16501977-0337,118,Donoghue 2009; MDC95 for baseline BBS scores 45-56 (Stevenson 2001 entire-group MDC is 6.9)
+10mWT,comfortable,older_adults,MCID_dist,0.05,NA,NA,small_meaningful,10.1111/j.1532-5415.2006.00701.x,492,Perera 2006; small meaningful change in gait speed (m/s)
+10mWT,comfortable,older_adults,MCII,0.10,NA,NA,substantial,10.1111/j.1532-5415.2006.00701.x,492,Perera 2006; substantial meaningful change in gait speed (m/s)
+6MWT,distance,older_adults,MCID_dist,20,NA,NA,small_meaningful,10.1111/j.1532-5415.2006.00701.x,492,Perera 2006; small meaningful change in 6-minute walk distance (m)
+6MWT,distance,older_adults,MCII,50,NA,NA,substantial,10.1111/j.1532-5415.2006.00701.x,492,Perera 2006; substantial change in 6-minute walk distance (m)
+TUG,time,community_elderly,ICC,0.97,NA,NA,test_retest,10.1093/ptj/82.2.128,96,Steffen 2002; community-dwelling elderly TUG (seconds)
+FIM,total,stroke,MCID_anchor,22,NA,NA,anchor,10.1016/j.apmr.2005.08.112,113,Beninato 2006; MCID for total FIM in inpatient stroke rehabilitation
+pain_nrs,intensity,chronic_pain,MCID_anchor,2.0,NA,NA,anchor,10.1016/S0304-3959(01)00349-9,2724,Farrar 2001; ~2-point (roughly 30 percent) reduction on the 0-10 NRS is clinically important across chronic pain conditions

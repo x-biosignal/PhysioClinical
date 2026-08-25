@@ -1,0 +1,42 @@
+id: mmse
+name: Mini-Mental State Examination
+version: '1.0'
+source_ref: 'Folstein MF, Folstein SE, McHugh PR (1975) J Psychiatr Res 12:189-198; severity bands per Tombaugh TN, McIntyre NJ (1992) J Am Geriatr Soc 40:922-935.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - orientation_time
+  - orientation_place
+  - registration
+  - attention_calculation
+  - recall
+  - naming
+  - repetition
+  - comprehension_command
+  - reading
+  - writing
+  - construction
+item_ranges:
+  orientation_time: [0, 5]
+  orientation_place: [0, 5]
+  registration: [0, 3]
+  attention_calculation: [0, 5]
+  recall: [0, 3]
+  naming: [0, 2]
+  repetition: [0, 1]
+  comprehension_command: [0, 3]
+  reading: [0, 1]
+  writing: [0, 1]
+  construction: [0, 1]
+subscales:
+  orientation: [orientation_time, orientation_place]
+  registration: [registration]
+  attention: [attention_calculation]
+  recall: [recall]
+  language: [naming, repetition, comprehension_command, reading, writing]
+  visuoconstruction: [construction]
+strata:
+  - {label: severe_impairment, lower: 0, upper: 17}
+  - {label: mild_impairment, lower: 18, upper: 23}
+  - {label: no_impairment, lower: 24, upper: 30}

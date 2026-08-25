@@ -1,0 +1,46 @@
+id: fma_le
+name: Fugl-Meyer Assessment, Lower Extremity (motor)
+version: '1.0'
+source_ref: 'Fugl-Meyer AR et al. (1975) Scand J Rehabil Med 7:13-31.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - m_01
+  - m_02
+  - m_03
+  - m_04
+  - m_05
+  - m_06
+  - m_07
+  - m_08
+  - m_09
+  - m_10
+  - m_11
+  - m_12
+  - m_13
+  - m_14
+  - c_01
+  - c_02
+  - c_03
+item_ranges:
+  m_01: [0, 2]
+  m_02: [0, 2]
+  m_03: [0, 2]
+  m_04: [0, 2]
+  m_05: [0, 2]
+  m_06: [0, 2]
+  m_07: [0, 2]
+  m_08: [0, 2]
+  m_09: [0, 2]
+  m_10: [0, 2]
+  m_11: [0, 2]
+  m_12: [0, 2]
+  m_13: [0, 2]
+  m_14: [0, 2]
+  c_01: [0, 2]
+  c_02: [0, 2]
+  c_03: [0, 2]
+subscales:
+  motor: [m_01, m_02, m_03, m_04, m_05, m_06, m_07, m_08, m_09, m_10, m_11, m_12, m_13, m_14]
+  coordination_speed: [c_01, c_02, c_03]

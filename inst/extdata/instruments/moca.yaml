@@ -1,0 +1,27 @@
+id: moca
+name: Montreal Cognitive Assessment
+version: '1.0'
+source_ref: 'Nasreddine ZS et al. (2005) J Am Geriatr Soc 53:695-699. The validated cutoff is a total < 26; add 1 point if <= 12 years of formal education (total capped at 30). The mild/moderate-severe bands below the cutoff are indicative, not separately validated.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - visuospatial_executive
+  - naming
+  - attention
+  - language
+  - abstraction
+  - delayed_recall
+  - orientation
+item_ranges:
+  visuospatial_executive: [0, 5]
+  naming: [0, 3]
+  attention: [0, 6]
+  language: [0, 3]
+  abstraction: [0, 2]
+  delayed_recall: [0, 5]
+  orientation: [0, 6]
+strata:
+  - {label: moderate_severe_impairment, lower: 0, upper: 17}
+  - {label: mild_impairment, lower: 18, upper: 25}
+  - {label: normal, lower: 26, upper: 30}
