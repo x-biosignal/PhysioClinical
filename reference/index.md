@@ -29,6 +29,8 @@
   : Distribution-based MCID (fraction-of-SD rule)
 - [`estimateMDC()`](https://x-biosignal.github.io/PhysioClinical/reference/estimateMDC.md)
   : Distribution-based Minimal Detectable Change from test-retest data
+- [`fromFHIR()`](https://x-biosignal.github.io/PhysioClinical/reference/fromFHIR.md)
+  : Import a FHIR R4 Observation as a clinical score
 - [`gasSummary()`](https://x-biosignal.github.io/PhysioClinical/reference/gasSummary.md)
   : Tabulate a GAS result
 - [`getClinimetric()`](https://x-biosignal.github.io/PhysioClinical/reference/getClinimetric.md)

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioClinical</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.7.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,6 +54,11 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioExperiment/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.7.0" id="physioclinical-070">PhysioClinical 0.7.0<a class="anchor" aria-label="anchor" href="#physioclinical-070"></a></h2>
+<ul><li>
+<code><a href="../reference/fromFHIR.html">fromFHIR()</a></code>: import a FHIR R4 Observation (a <code><a href="../reference/toFHIRObservation.html">toFHIRObservation()</a></code> result, JSON string, or <code>.json</code> path) back into a <code>ClinicalScore</code> — the import counterpart to the export-only interop. Recovers instrument id and subscale names via the bundled LOINC map, total/subscale values from <code>valueQuantity</code> (<code>dataAbsentReason</code> -&gt; <code>NA</code>), subject id (strips <code>Patient/</code>) and timestamp; re-derives the stratum for a registered instrument. Documented lossy slots: <code>items_used</code> and <code>missing_handling</code> are not recoverable.</li>
+</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.6.0" id="physioclinical-060">PhysioClinical 0.6.0<a class="anchor" aria-label="anchor" href="#physioclinical-060"></a></h2>
 <ul><li>

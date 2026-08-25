@@ -1,5 +1,18 @@
 # Changelog
 
+## PhysioClinical 0.7.0
+
+- [`fromFHIR()`](https://x-biosignal.github.io/PhysioClinical/reference/fromFHIR.md):
+  import a FHIR R4 Observation (a
+  [`toFHIRObservation()`](https://x-biosignal.github.io/PhysioClinical/reference/toFHIRObservation.md)
+  result, JSON string, or `.json` path) back into a `ClinicalScore` —
+  the import counterpart to the export-only interop. Recovers instrument
+  id and subscale names via the bundled LOINC map, total/subscale values
+  from `valueQuantity` (`dataAbsentReason` -\> `NA`), subject id (strips
+  `Patient/`) and timestamp; re-derives the stratum for a registered
+  instrument. Documented lossy slots: `items_used` and
+  `missing_handling` are not recoverable.
+
 ## PhysioClinical 0.6.0
 
 - [`scoreCohort()`](https://x-biosignal.github.io/PhysioClinical/reference/scoreCohort.md):
