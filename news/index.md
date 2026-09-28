@@ -181,7 +181,7 @@ package, from instrument scoring through standards-compliant export.
     or decline only when it exceeds the measurement noise.
   - The MDC threshold is derived from the standard error of measurement
     (`sem_value`) at a configurable confidence level (default 0.95) via
-    [`PhysioCore::mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html),
+    [`PhysioCore::mdc()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/mdc.html),
     so classification stays consistent with the shared psychometric
     kernels in the ecosystem.
   - Accepts vectors of change scores for batch classification across a

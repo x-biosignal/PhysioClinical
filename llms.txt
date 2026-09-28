@@ -9,8 +9,10 @@ ICF tagging, and normative deviation scoring.
 
 ``` r
 
+# the containers build on Bioconductor, so its repositories are needed too
+install.packages("BiocManager", repos = "https://cloud.r-project.org")
 install.packages("PhysioClinical",
-  repos = c("https://x-biosignal.r-universe.dev", "https://cloud.r-project.org"))
+  repos = c("https://x-biosignal.r-universe.dev", BiocManager::repositories()))
 ```
 
 ## Governance & support

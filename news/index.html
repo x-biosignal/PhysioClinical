@@ -120,7 +120,7 @@
 <p>Responder classification against the minimal detectable change (MDC):</p>
 <ul><li>
 <code><a href="../reference/mdcResponder.html">mdcResponder()</a></code> labels change scores (follow-up minus baseline) as <code>"improved"</code>, <code>"stable"</code>, or <code>"declined"</code>, treating a change as a real improvement or decline only when it exceeds the measurement noise.</li>
-<li>The MDC threshold is derived from the standard error of measurement (<code>sem_value</code>) at a configurable confidence level (default 0.95) via <code><a href="https://x-biosignal.github.io/PhysioCore//reference/mdc.html" class="external-link">PhysioCore::mdc()</a></code>, so classification stays consistent with the shared psychometric kernels in the ecosystem.</li>
+<li>The MDC threshold is derived from the standard error of measurement (<code>sem_value</code>) at a configurable confidence level (default 0.95) via <code><a href="https://x-biosignal.r-universe.dev/PhysioExperiment/reference/mdc.html" class="external-link">PhysioCore::mdc()</a></code>, so classification stays consistent with the shared psychometric kernels in the ecosystem.</li>
 <li>Accepts vectors of change scores for batch classification across a cohort.</li>
 </ul></li>
 </ul></div>
