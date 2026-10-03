@@ -1,0 +1,41 @@
+id: berg
+name: Berg Balance Scale
+version: '1.0'
+source_ref: 'Berg K et al. (1992). Measuring balance in the elderly. Can J Public Health 83(S2):S7-11.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - item01
+  - item02
+  - item03
+  - item04
+  - item05
+  - item06
+  - item07
+  - item08
+  - item09
+  - item10
+  - item11
+  - item12
+  - item13
+  - item14
+item_ranges:
+  item01: [0, 4]
+  item02: [0, 4]
+  item03: [0, 4]
+  item04: [0, 4]
+  item05: [0, 4]
+  item06: [0, 4]
+  item07: [0, 4]
+  item08: [0, 4]
+  item09: [0, 4]
+  item10: [0, 4]
+  item11: [0, 4]
+  item12: [0, 4]
+  item13: [0, 4]
+  item14: [0, 4]
+strata:
+  - {label: high_fall_risk, lower: 0, upper: 20}
+  - {label: medium_fall_risk, lower: 21, upper: 40}
+  - {label: low_fall_risk, lower: 41, upper: 56}

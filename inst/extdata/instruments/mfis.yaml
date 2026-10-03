@@ -1,0 +1,58 @@
+id: mfis
+name: Modified Fatigue Impact Scale
+version: '1.0'
+source_ref: 'Fisk JD et al. (1994) Clin Infect Dis 18(Suppl 1):S79-S83; subscale composition per the MSQLI manual (Ritvo et al. 1997). Twenty-one items rated 0-4 (total 0-84); a total >= 38 indicates fatigue per Flachenecker P et al. (2002) Mult Scler 8:523-526.'
+item_type: ordinal
+aggregation: sum
+direction: higher_worse
+items:
+  - item01
+  - item02
+  - item03
+  - item04
+  - item05
+  - item06
+  - item07
+  - item08
+  - item09
+  - item10
+  - item11
+  - item12
+  - item13
+  - item14
+  - item15
+  - item16
+  - item17
+  - item18
+  - item19
+  - item20
+  - item21
+item_ranges:
+  item01: [0, 4]
+  item02: [0, 4]
+  item03: [0, 4]
+  item04: [0, 4]
+  item05: [0, 4]
+  item06: [0, 4]
+  item07: [0, 4]
+  item08: [0, 4]
+  item09: [0, 4]
+  item10: [0, 4]
+  item11: [0, 4]
+  item12: [0, 4]
+  item13: [0, 4]
+  item14: [0, 4]
+  item15: [0, 4]
+  item16: [0, 4]
+  item17: [0, 4]
+  item18: [0, 4]
+  item19: [0, 4]
+  item20: [0, 4]
+  item21: [0, 4]
+subscales:
+  physical: [item04, item06, item07, item10, item13, item14, item17, item20, item21]
+  cognitive: [item01, item02, item03, item05, item11, item12, item15, item16, item18, item19]
+  psychosocial: [item08, item09]
+strata:
+  - {label: not_fatigued, lower: 0, upper: 37}
+  - {label: fatigued, lower: 38, upper: 84}

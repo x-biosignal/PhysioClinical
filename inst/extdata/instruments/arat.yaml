@@ -1,0 +1,52 @@
+id: arat
+name: Action Research Arm Test
+version: '1.0'
+source_ref: 'Lyle RC (1981) Int J Rehabil Res 4:483-492.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - grasp_1
+  - grasp_2
+  - grasp_3
+  - grasp_4
+  - grasp_5
+  - grasp_6
+  - grip_1
+  - grip_2
+  - grip_3
+  - grip_4
+  - pinch_1
+  - pinch_2
+  - pinch_3
+  - pinch_4
+  - pinch_5
+  - pinch_6
+  - gross_1
+  - gross_2
+  - gross_3
+item_ranges:
+  grasp_1: [0, 3]
+  grasp_2: [0, 3]
+  grasp_3: [0, 3]
+  grasp_4: [0, 3]
+  grasp_5: [0, 3]
+  grasp_6: [0, 3]
+  grip_1: [0, 3]
+  grip_2: [0, 3]
+  grip_3: [0, 3]
+  grip_4: [0, 3]
+  pinch_1: [0, 3]
+  pinch_2: [0, 3]
+  pinch_3: [0, 3]
+  pinch_4: [0, 3]
+  pinch_5: [0, 3]
+  pinch_6: [0, 3]
+  gross_1: [0, 3]
+  gross_2: [0, 3]
+  gross_3: [0, 3]
+subscales:
+  grasp: [grasp_1, grasp_2, grasp_3, grasp_4, grasp_5, grasp_6]
+  grip: [grip_1, grip_2, grip_3, grip_4]
+  pinch: [pinch_1, pinch_2, pinch_3, pinch_4, pinch_5, pinch_6]
+  gross_movement: [gross_1, gross_2, gross_3]

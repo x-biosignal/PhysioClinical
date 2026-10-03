@@ -1,0 +1,19 @@
+id: mrs
+name: modified Rankin Scale
+version: '1.0'
+source_ref: 'van Swieten JC et al. (1988) Stroke 19:604-607.'
+item_type: ordinal
+aggregation: sum
+direction: higher_worse
+items:
+  - grade
+item_ranges:
+  grade: [0, 6]
+strata:
+  - {label: no_symptoms, lower: 0, upper: 0}
+  - {label: no_significant_disability, lower: 1, upper: 1}
+  - {label: slight_disability, lower: 2, upper: 2}
+  - {label: moderate_disability, lower: 3, upper: 3}
+  - {label: moderately_severe_disability, lower: 4, upper: 4}
+  - {label: severe_disability, lower: 5, upper: 5}
+  - {label: dead, lower: 6, upper: 6}

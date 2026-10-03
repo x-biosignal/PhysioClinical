@@ -1,0 +1,34 @@
+id: lawton_iadl
+name: Lawton-Brody Instrumental Activities of Daily Living (IADL) scale
+version: '1.0'
+source_ref: 'Lawton MP, Brody EM (1969) Gerontologist 9:179-186. Summary score is a 0-8 count of independent domains (each domain dichotomised high=1/low=0); Lawton & Brody define no total-score severity bands, so none are asserted here.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - telephone
+  - shopping
+  - food_preparation
+  - housekeeping
+  - laundry
+  - transportation
+  - medication
+  - finances
+item_ranges:
+  telephone: [0, 1]
+  shopping: [0, 1]
+  food_preparation: [0, 1]
+  housekeeping: [0, 1]
+  laundry: [0, 1]
+  transportation: [0, 1]
+  medication: [0, 1]
+  finances: [0, 1]
+item_values:
+  telephone: [0, 1]
+  shopping: [0, 1]
+  food_preparation: [0, 1]
+  housekeeping: [0, 1]
+  laundry: [0, 1]
+  transportation: [0, 1]
+  medication: [0, 1]
+  finances: [0, 1]

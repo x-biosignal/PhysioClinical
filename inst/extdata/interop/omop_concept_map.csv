@@ -1,0 +1,14 @@
+instrument,subscale,domain_id,measurement_concept_id,unit_concept_id,source_loinc,note
+gait_speed,total,Measurement,,,72106-8,Gait speed 10m walk; LOINC 72106-8. Athena concept_id not bundled - map at your site.
+6mwt,total,Measurement,,,,Six-minute walk distance (m). No bundled Athena concept.
+tug,total,Measurement,,,,Timed Up and Go (s). No bundled Athena concept.
+fma_ue,total,Observation,,,,Fugl-Meyer UE motor. Ordinal assessment. No bundled Athena concept.
+fma_le,total,Observation,,,,Fugl-Meyer LE motor. Ordinal assessment. No bundled Athena concept.
+berg,total,Observation,,,,Berg Balance Scale. Ordinal assessment. No bundled Athena concept.
+arat,total,Observation,,,,Action Research Arm Test. Ordinal assessment. No bundled Athena concept.
+nihss,total,Observation,,,,NIH Stroke Scale. Ordinal assessment. No bundled Athena concept.
+mrs,total,Observation,,,,Modified Rankin Scale. Ordinal assessment. No bundled Athena concept.
+fim,total,Observation,,,,FIM total. Ordinal assessment. No bundled Athena concept.
+fim,motor,Observation,,,,FIM motor subscale. No bundled Athena concept.
+fim,cognitive,Observation,,,,FIM cognitive subscale. No bundled Athena concept.
+fam,total,Observation,,,,Functional Assessment Measure. No bundled Athena concept.

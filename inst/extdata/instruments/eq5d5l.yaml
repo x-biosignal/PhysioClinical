@@ -1,0 +1,19 @@
+id: eq5d5l
+name: EQ-5D-5L (descriptive system)
+version: '1.0'
+source_ref: 'Herdman M et al. (2011) Qual Life Res 20:1727-1736. The five dimensions are scored here as a level-sum score (5-25; Feng Y et al. (2014) Qual Life Res 23:977-989), higher = worse health. The country-specific utility index and the EQ-VAS (0-100) are recorded separately and are not computed here.'
+item_type: ordinal
+aggregation: sum
+direction: higher_worse
+items:
+  - mobility
+  - self_care
+  - usual_activities
+  - pain_discomfort
+  - anxiety_depression
+item_ranges:
+  mobility: [1, 5]
+  self_care: [1, 5]
+  usual_activities: [1, 5]
+  pain_discomfort: [1, 5]
+  anxiety_depression: [1, 5]

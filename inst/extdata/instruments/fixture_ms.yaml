@@ -1,0 +1,20 @@
+id: fixture_ms
+name: Fixture multi-subscale instrument
+version: '1.0'
+source_ref: 'Synthetic fixture for scoring-engine tests.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items: [a1, a2, a3, b1, b2]
+item_ranges:
+  a1: [0, 2]
+  a2: [0, 2]
+  a3: [0, 2]
+  b1: [0, 3]
+  b2: [0, 3]
+subscales:
+  motor: [a1, a2, a3]
+  sensory: [b1, b2]
+strata:
+  - {label: low, lower: 0, upper: 5}
+  - {label: high, lower: 6, upper: 12}

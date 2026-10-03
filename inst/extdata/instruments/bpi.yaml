@@ -1,0 +1,34 @@
+id: bpi
+name: Brief Pain Inventory (Short Form)
+version: '1.0'
+source_ref: 'Cleeland CS, Ryan KM (1994) Ann Acad Med Singapore 23:129-138. Pain severity and pain interference are reported as separate mean subscale scores (each 0-10); the total returned here is the grand mean over all items.'
+item_type: ordinal
+aggregation: mean
+direction: higher_worse
+items:
+  - worst_pain
+  - least_pain
+  - average_pain
+  - pain_now
+  - interference_general_activity
+  - interference_mood
+  - interference_walking
+  - interference_work
+  - interference_relations
+  - interference_sleep
+  - interference_enjoyment
+item_ranges:
+  worst_pain: [0, 10]
+  least_pain: [0, 10]
+  average_pain: [0, 10]
+  pain_now: [0, 10]
+  interference_general_activity: [0, 10]
+  interference_mood: [0, 10]
+  interference_walking: [0, 10]
+  interference_work: [0, 10]
+  interference_relations: [0, 10]
+  interference_sleep: [0, 10]
+  interference_enjoyment: [0, 10]
+subscales:
+  severity: [worst_pain, least_pain, average_pain, pain_now]
+  interference: [interference_general_activity, interference_mood, interference_walking, interference_work, interference_relations, interference_sleep, interference_enjoyment]

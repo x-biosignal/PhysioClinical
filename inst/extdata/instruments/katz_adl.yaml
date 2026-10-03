@@ -1,0 +1,32 @@
+id: katz_adl
+name: Katz Index of Independence in Activities of Daily Living
+version: '1.0'
+source_ref: 'Katz S et al. (1963) JAMA 185:914-919; interpretation per Wallace M, Shelkey M (2007) Try This 2. Each activity scored independent=1/dependent=0; total 0-6.'
+item_type: ordinal
+aggregation: sum
+direction: higher_better
+items:
+  - bathing
+  - dressing
+  - toileting
+  - transferring
+  - continence
+  - feeding
+item_ranges:
+  bathing: [0, 1]
+  dressing: [0, 1]
+  toileting: [0, 1]
+  transferring: [0, 1]
+  continence: [0, 1]
+  feeding: [0, 1]
+item_values:
+  bathing: [0, 1]
+  dressing: [0, 1]
+  toileting: [0, 1]
+  transferring: [0, 1]
+  continence: [0, 1]
+  feeding: [0, 1]
+strata:
+  - {label: severe_impairment, lower: 0, upper: 2}
+  - {label: moderate_impairment, lower: 3, upper: 4}
+  - {label: independent, lower: 5, upper: 6}

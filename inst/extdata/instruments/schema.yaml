@@ -1,0 +1,17 @@
+# Contract for a ClinicalInstrument YAML specification.
+# Each instrument file defines one clinical outcome measure.
+#
+# id:          short unique identifier (string, required)
+# name:        human-readable name (string)
+# version:     specification version (string)
+# source_ref:  citation / provenance (string)
+# items:       ordered list of item identifiers (required)
+# item_type:   "interval" or "ordinal"; a single value applies to all items,
+#              or a list of one type per item
+# item_ranges: mapping of item id -> [min, max] admissible range (required)
+# subscales:   mapping of subscale name -> list of its item ids (optional)
+# aggregation: "sum" (default) or "mean"
+# direction:   "higher_better" (default) or "higher_worse"
+# strata:      ordered list of interpretation bands, each {label, lower, upper};
+#              a total score t belongs to the first band with lower <= t <= upper
+schema_version: 1
